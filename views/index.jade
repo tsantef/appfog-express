@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  h1 Express Sample App
+
+  h2 AppFog Environment Wrapper
+  pre
+    = JSON.stringify(appfog, null, '  ')
+
+  h2 Node Environment
+  pre
+    = JSON.stringify(process.env, null, '  ')
